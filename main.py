@@ -13,7 +13,7 @@ from nltk.tokenize import TweetTokenizer
 # 1. CONFIGURATION
 # ==========================================
 
-BOT_TOKEN = "9108547750:AAGOZy6EgvMW-J5it_dCOK8mpRVqo9unPgM"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 if not BOT_TOKEN:
     raise ValueError("Telegram bot token is missing!")
